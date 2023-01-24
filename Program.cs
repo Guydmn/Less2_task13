@@ -19,13 +19,15 @@ if (a > x1)
             N = N / 10;
             ind1 = Convert.ToInt32(Math.Pow(y,count-2));
             ind2 = Convert.ToInt32(Math.Pow(y,count-3));
-        }  
-        Console.WriteLine($"каккое количество цифр в чсиле {count}");
-        Console.WriteLine($"индекс {ind1}");
-        Console.WriteLine($"индекс {ind2}");
-        
+        }        
     Console.WriteLine($"Третья цифра числа {(a%ind1/ind2)}");
 }    
+else
+{
+    Console.WriteLine("В вашем числе менее трех цифр");
+}
 
 
-
+//Console.WriteLine($"каккое количество цифр в чсиле {count}");
+        //Console.WriteLine($"индекс {ind1}");
+        //Console.WriteLine($"индекс {ind2}");
